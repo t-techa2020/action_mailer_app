@@ -73,4 +73,8 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  config.action_mailer.delivery_method = :file
+  # config.aaction_mailer.file_settings = { location: Rails.root.join('log/mails') } # ファイル保存パスの指定
+  # 指定しないとデフォルトでは tmp/mails 以下に保存される
 end
